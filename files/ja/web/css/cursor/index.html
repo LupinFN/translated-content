@@ -321,9 +321,18 @@ cursor: unset;
 <div>{{Compat("css.properties.cursor")}}</div>
 
 <h2 id="See_also" name="See_also">関連情報</h2>
+/* キーワード値 */
+cursor: cell;
+cursor: auto;
 
-<ul>
- <li><a href="/ja/docs/Web/CSS/CSS_Basic_User_Interface/Using_URL_values_for_the_cursor_property">cursor プロパティにおける URL 値の使用</a></li>
- <li>{{cssxref("pointer-events")}}</li>
- <li>{{cssxref("url()", "url()")}} 関数</li>
-</ul>
+/* URL とキーワードによる代替 */
+cursor: url(hand.cur), pointer;
+
+/* URL と座標とキーワードによる代替 */
+cursor: url(cursor1.png) 4 12, auto;
+cursor: url(cursor2.png) 2 2, pointer;
+
+/* グローバル値 */
+cursor: inherit;
+cursor: initial;
+cursor: unset;
